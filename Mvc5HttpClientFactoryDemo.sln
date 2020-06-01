@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc5HttpClientFactoryDemo", "Mvc5HttpClientFactoryDemo\Mvc5HttpClientFactoryDemo.csproj", "{E71F2914-39C6-47E5-A83A-0D0408280F59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E71F2914-39C6-47E5-A83A-0D0408280F59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E71F2914-39C6-47E5-A83A-0D0408280F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E71F2914-39C6-47E5-A83A-0D0408280F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E71F2914-39C6-47E5-A83A-0D0408280F59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC008EF4-68C8-4ABA-A044-BA2F959B3587}
+	EndGlobalSection
+EndGlobal
