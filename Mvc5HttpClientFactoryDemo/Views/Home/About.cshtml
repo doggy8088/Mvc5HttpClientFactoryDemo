@@ -1,7 +1,6 @@
 ﻿@{
-    ViewBag.Title = "About";
+    Layout = "";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<base href="https://blog.miniasp.com" />
 
-<p>Use this area to provide additional information.</p>
+@Html.Raw(ViewBag.Message)
