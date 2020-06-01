@@ -1,6 +1,7 @@
 using System;
-
 using Unity;
+using Microsoft.Extensions.DependencyInjection;
+using System.Net.Http;
 
 namespace Mvc5HttpClientFactoryDemo
 {
@@ -42,6 +43,10 @@ namespace Mvc5HttpClientFactoryDemo
 
             // TODO: Register your type's mappings here.
             // container.RegisterType<IProductRepository, ProductRepository>();
+
+            container.RegisterFactory<IServiceCollection>(c => new ServiceCollection())
+                .RegisterFactory<IServiceProvider>(c => c.Resolve<IServiceCollection>().AddHttpClient().BuildServiceProvider())
+                .RegisterFactory<IHttpClientFactory>(c => c.Resolve<IServiceProvider>().GetRequiredService<IHttpClientFactory>());
         }
     }
 }
